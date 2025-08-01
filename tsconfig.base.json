@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@portfolio/home": ["sections/src/index.ts"],
+      "@portfolio/sections/about": ["sections/about/src/index.ts"],
+      "@portfolio/sections/contact": ["sections/contact/src/index.ts"],
+      "@portfolio/sections/projects": ["sections/projects/src/index.ts"],
+      "@portfolio/sections/skills": ["sections/skills/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
