@@ -1,5 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'ngx-toastr/toastr';
 
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --laranja-color: #f97316;
+  --azul-color: #2563eb;
+  --laranja-opaco: rgba(249, 115, 22, 0.5);
+  --azul-opaco: rgba(42, 52, 73, 0.39);
+}
+
+[data-theme='laranja'] {
+  --btn-laranja: var(--laranja-color);
+  --btn-azul: var(--azul-opaco);
+}
+
+[data-theme='azul'] {
+  --btn-azul: var(--azul-color);
+  --btn-laranja: var(--laranja-opaco);
+}
+@layer utilities {
+  [data-theme='laranja'] .bg-theme {
+    background-color: var(--laranja-color);
+  }
+
+  [data-theme='azul'] .bg-theme {
+    background-color: var(--azul-color);
+  }
+
+  [data-theme='laranja'] .text-laranja {
+    color: var(--laranja-color);
+  }
+
+  [data-theme='laranja'] .text-azul {
+    color: rgba(0, 80, 253, 0.233); /* tom mais apagado */
+  }
+
+  [data-theme='azul'] .text-azul {
+    color: var(--azul-color);
+  }
+
+  [data-theme='azul'] .text-laranja {
+    color: rgba(249, 116, 22, 0.308); /* tom mais apagado */
+  }
+  [data-theme='laranja'] .text-theme {
+    color: var(--laranja-color);
+  }
+
+  [data-theme='azul'] .text-theme {
+    color: var(--azul-color);
+  }
+  [data-theme='laranja'] .border-theme {
+    border-color: var(--laranja-color);
+  }
+
+  [data-theme='azul'] .border-theme {
+    border-color: var(--azul-color);
+  }
+}
+
+.toast-success,
+.toast-error,
+.toast-info,
+.toast-warning {
+  @apply bg-theme text-white;
+}
