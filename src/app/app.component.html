@@ -1,2 +1,20 @@
 <router-outlet></router-outlet>
-<h1 class="text-3xl">ola</h1>
+<app-home></app-home>
+
+@defer (on viewport) {
+<app-about></app-about>
+} @placeholder {
+<p>Carregando sobre...</p>
+} @defer (on viewport) {
+<app-projects></app-projects>
+} @placeholder {
+<p>Carregando projetos...</p>
+} @defer (on viewport) {
+<app-contact></app-contact>
+} @placeholder {
+<p>Carregando contato...</p>
+} @defer (on idle) {
+<app-footer></app-footer>
+} @placeholder {
+<p>Carregando rodapé...</p>
+}
