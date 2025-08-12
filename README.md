@@ -7,7 +7,7 @@ Este repositório contém o código-fonte do meu site de portfólio pessoal, des
 
 Você pode visualizar o site publicado em:
 
-**[matheusfgsantos.vercel.app](https://matheusfgsantos.vercel.app)**
+**[Studio-Matheus](https://umtheus.github.io/Studio-Matheus/)**
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -34,5 +34,5 @@ Execute nx test
 - 💼 LinkedIn:  [linkedin.com/in/matheusBrambila](https://www.linkedin.com/in/matheus-brambila-moises-677b35263/)
 )
 
-- 🌐 Site: [matheusfgsantos.vercel.app](https://matheusfgsantos.vercel.app)
+- 🌐 Site: [Studio-Matheus](https://umtheus.github.io/Studio-Matheus/)
 
