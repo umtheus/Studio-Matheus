@@ -21,5 +21,5 @@ import { ProjectsComponent } from 'src/sections/projects/projects.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Studio Matheus';
 }
