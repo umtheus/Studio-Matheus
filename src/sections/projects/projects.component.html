@@ -1,0 +1,252 @@
+<section id="projeto" class="w-full mt-20 lg:mt-40 2xl:mt-52 px-14 xl:px-40">
+  <div class="w-full flex flex-col gap-8 items-center">
+    <h2 class="text-3xl sm:text-4xl 2xl:text-5xl font-bold">Projetos</h2>
+    <div class="flex flex-col items-center">
+      <div class="h-16 w-1 bg-theme rounded-lg"></div>
+      <div class="mb-2"></div>
+      <div class="w-2 h-2 bg-theme rounded-full"></div>
+      <div class="mt-0"></div>
+    </div>
+  </div>
+  <!-- 1 projeto -->
+  <div class="flex mt-32">
+    <div
+      class="flex flex-col gap-4 w-full lg:w-1/2 items-center lg:items-start"
+    >
+      <span class="text-2xl font-semibold">Uber-Ui</span>
+      <div class="flex gap-3">
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >HTML</a
+        >
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >TailwindCSS</a
+        >
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >Node.js</a
+        >
+      </div>
+      <span class="max-w-lg text-center lg:text-left"
+        >Este projeto recria o layout do site da Uber com foco em responsividade
+        e design moderno, utilizando exclusivamente Tailwind CSS. Ideal para
+        estudos de UI, práticas com Tailwind e demonstração de habilidades em
+        frontend.</span
+      >
+      <div class="flex gap-10 justify-center items-center">
+        <button
+          (click)="copiarClone(projetos[2].linkClone)"
+          class="bg-theme py-2 px-4 rounded-md font-bold hover:opacity-80"
+        >
+          GitHub Clone
+        </button>
+        <a
+          href="https://github.com/umtheus/uber-ui-responsive"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-bold border-b-2 border-theme cursor-pointer hover:scale-105 ease-out duration-500"
+        >
+          Ver Projeto <i class="fa-solid fa-arrow-up rotate-45 ml-2"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hidden relative lg:flex lg:w-1/2 justify-center items-center">
+      <div
+        class="h-48 w-96 2xl:h-60 2xl:w-[500px] border-2 border-gray-800 rounded-sm"
+      ></div>
+      <img
+        src="uber.png"
+        class="absolute object-cover object-top h-48 w-96 2xl:h-60 2xl:w-[500px] brightness-125 rounded-sm -translate-x-3 translate-y-3 hover:scale-110 duration-500 cursor-pointer"
+      />
+    </div>
+  </div>
+
+  <!-- 1 projeto -->
+  <!-- 2 projeto -->
+  <div class="flex mt-32">
+    <div
+      class="hidden relative lg:flex lg:w-1/2 justify-center lg:items-start lg:justify-start"
+    >
+      <div
+        class="h-48 w-96 2xl:h-60 2xl:w-[500px] border-2 border-gray-800 rounded-sm"
+      ></div>
+      <img
+        src="housetimg.png"
+        class="absolute object-cover object-top h-48 w-96 2xl:h-60 2xl:w-[500px] brightness-125 rounded-sm translate-x-3 translate-y-3 hover:scale-110 duration-500 cursor-pointer"
+      />
+    </div>
+    <div class="flex flex-col gap-4 w-full lg:w-1/2 items-center">
+      <div class="flex flex-col gap-4">
+        <span
+          class="flex text-2xl font-semibold justify-center lg:justify-normal"
+          >Houset</span
+        >
+        <div class="flex gap-3 justify-center lg:justify-normal">
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Angular</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >TailwindCSS</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Typescript</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Jest</a
+          >
+        </div>
+        <span class="max-w-lg text-center lg:text-left"
+          >Este projeto é o front-end de um site desenvolvido com Angular e
+          Tailwind CSS, direcionado para corretores de imóveis que desejam
+          apresentar suas propriedades de forma moderna, profissional e
+          responsiva.</span
+        >
+        <div class="flex gap-10 items-center justify-center lg:justify-normal">
+          <button
+            (click)="copiarClone(projetos[3].linkClone)"
+            class="bg-theme py-2 px-4 rounded-md font-bold hover:opacity-80"
+          >
+            GitHub Clone
+          </button>
+          <a
+            href="https://github.com/umtheus/hou-set"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-bold border-b-2 border-theme cursor-pointer hover:scale-105 ease-out duration-500"
+          >
+            Ver Projeto <i class="fa-solid fa-arrow-up rotate-45 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2 projeto -->
+  <!-- 3 projeto -->
+  <div class="flex mt-20">
+    <div
+      class="flex flex-col gap-4 w-full lg:w-1/2 items-center lg:items-start"
+    >
+      <span class="text-2xl font-semibold">Calculadora JS</span>
+      <div class="flex gap-3">
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >Angular</a
+        >
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >TailwindCSS</a
+        >
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >Typescript</a
+        >
+        <a
+          class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+          >Jest</a
+        >
+      </div>
+      <span class="max-w-lg text-center lg:text-left"
+        >Uma calculadora funcional e estilizada, desenvolvida em TypeScript com
+        interface moderna usando TailwindCSS. O projeto foi arquitetado com
+        Next.js, proporcionando performance e organização, e testado com Jest
+        para garantir confiabilidade nas operações. Aplica boas práticas de
+        desenvolvimento frontend e de testes automatizados.</span
+      >
+      <div class="flex gap-10 justify-center items-center">
+        <button
+          (click)="copiarClone(projetos[0].linkClone)"
+          class="bg-theme py-2 px-4 rounded-md font-bold hover:opacity-80"
+        >
+          GitHub Clone
+        </button>
+        <a
+          href="https://github.com/umtheus/Calculadora"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-bold border-b-2 border-theme cursor-pointer hover:scale-105 ease-out duration-500"
+        >
+          Ver Projeto <i class="fa-solid fa-arrow-up rotate-45 ml-2"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hidden relative lg:flex lg:w-1/2 justify-center items-center">
+      <div
+        class="h-48 w-96 2xl:h-60 2xl:w-[500px] border-2 border-gray-800 rounded-sm"
+      ></div>
+      <img
+        src="calculator.png"
+        class="absolute h-48 w-96 2xl:h-60 2xl:w-[500px] brightness-125 rounded-sm -translate-x-3 translate-y-3 hover:scale-110 duration-500 cursor-pointer"
+      />
+    </div>
+  </div>
+  <!-- 3 projeto -->
+  <!-- 4 projeto -->
+  <div class="flex mt-32">
+    <div
+      class="hidden relative lg:flex lg:w-1/2 justify-center lg:items-start lg:justify-start"
+    >
+      <div
+        class="h-48 w-96 2xl:h-60 2xl:w-[500px] border-2 border-gray-800 rounded-sm"
+      ></div>
+      <img
+        src="todo.png"
+        class="absolute object-cover object-top h-48 w-96 2xl:h-60 2xl:w-[500px] brightness-125 rounded-sm translate-x-3 translate-y-3 hover:scale-110 duration-500 cursor-pointer"
+      />
+    </div>
+    <div class="flex flex-col gap-4 w-full lg:w-1/2 items-center">
+      <div class="flex flex-col gap-4">
+        <span
+          class="flex text-2xl font-semibold justify-center lg:justify-normal"
+          >Todo-list</span
+        >
+        <div class="flex gap-3 justify-center lg:justify-normal">
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Angular</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >TailwindCSS</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Typescript</a
+          >
+          <a
+            class="cursor-pointer rounded-full bg-gray-800 bg-opacity-90 px-4 hover:brightness-150"
+            >Jest</a
+          >
+        </div>
+        <span class="max-w-lg text-center lg:text-left"
+          >Lista funcional e estilizada desenvolvida em TypeScript, com uma
+          interface modera criada com TailwindCSS. Projeto arquitetado com NX.js
+          , oferecendo alta performance, organização e escalabilidade. Testado
+          com Jest, garantindo confiabilidade e segurança nas alterações por
+          meios de testes unitários automatizados.</span
+        >
+        <div class="flex gap-10 items-center justify-center lg:justify-normal">
+          <button
+            (click)="copiarClone(projetos[1].linkClone)"
+            class="bg-theme py-2 px-4 rounded-md font-bold hover:opacity-80"
+          >
+            GitHub Clone
+          </button>
+          <a
+            href="https://github.com/umtheus/Todo-List.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-bold border-b-2 border-theme cursor-pointer hover:scale-105 ease-out duration-500"
+          >
+            Ver Projeto <i class="fa-solid fa-arrow-up rotate-45 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 4 projeto -->
+</section>
