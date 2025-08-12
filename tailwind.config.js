@@ -8,7 +8,26 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: 'var(--laranja-color)',
+        secondary: 'var(--azul-color)',
+      },
+      keyframes: {
+        rotateOnce: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(180deg)' },
+        },
+        grow: {
+          '0%': { transform: 'scale(0)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      animation: {
+        'rotate-once': 'rotateOnce 1s ease-out forwards',
+        grow: 'grow 1s ease-out forwards',
+      },
+    },
   },
   plugins: [],
 };
