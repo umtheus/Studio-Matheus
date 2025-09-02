@@ -48,4 +48,10 @@ export class HomeComponent implements OnInit {
     document.body.setAttribute('data-theme', theme);
     this.themeSelecionado = theme;
   }
+  baixarCurriculo() {
+    const link = document.createElement('a');
+    link.href = 'Matheus-Brambila-Curriculo-2025.pdf';
+    link.download = 'Matheus-Brambila-Curriculo-2025.pdf';
+    link.click();
+  }
 }
